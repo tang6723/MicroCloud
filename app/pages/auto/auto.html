@@ -1,0 +1,94 @@
+<!--
+  Generated template for the AutoPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar primary>
+    <ion-title>汽车</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="div-head">
+          <ion-slides #mySlider [options]="mySlideOptions">
+
+            <ion-slide style="background-color: green">
+              <img src="img/auto/auto-ad-1.jpg" style="width:100%;height:230px; "/>
+            </ion-slide>
+
+            <ion-slide style="background-color: blue">
+              <img src="img/auto/auto-ad-2.jpg" style="width:100%;height:230px; "/>
+            </ion-slide>
+
+            <ion-slide style="background-color: red">
+              <img src="img/auto/auto-ad-3.jpg" style="width:100%;height:230px; "/>
+            </ion-slide>
+
+          </ion-slides>
+        </div>
+      </ion-col>
+    </ion-row>
+    <div style="height:5px;width:100%;background-color: #8f8f8f"></div>
+    <!--中间部分-->
+    <ion-toolbar no-border-top>
+      <ion-title>尊卡通</ion-title>
+      <ion-buttons end>
+        <button>
+          <ion-icon name="more"></ion-icon>
+        </button>
+        <button>
+          <ion-icon name="options"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+
+    <ion-row>
+      <ion-col>
+        <div class="div-middle">
+          <img src="img/auto/c1.jpg" style="width:100%;height:100%; "/>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="div-middle">
+          <img src="img/auto/c2.jpg" style="width:100%;height:100%; "/>
+        </div>
+
+      </ion-col>
+      <ion-col>
+        <div class="div-middle">
+          <img src="img/auto/c3.jpg" style="width:100%;height:100%; "/>
+        </div>
+
+      </ion-col>
+
+    </ion-row>
+    <div style="height:5px;width:100%;background-color: #8f8f8f"></div>
+
+    <!--下面部分-->
+    <ion-row>
+      <ion-col (click)="setPerson(person)">
+        <div class="div-bottom">
+          <img src="img/auto/ac1.jpg" style="width:100%;height:100%; "/>
+        </div>
+
+      </ion-col>
+      <ion-col>
+        <div class="div-bottom">
+          <img src="img/auto/ac2.jpg" style="width:100%;height:100%; "/>
+        </div>
+
+      </ion-col>
+
+    </ion-row>
+
+
+  </ion-grid>
+</ion-content>
