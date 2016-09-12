@@ -12,12 +12,13 @@
 // Material Design only Sass variables can go here
 //$toolbar-md-background:                   map-get($colors, primary) !default;
 //$toolbar-md-text-color:                   #fff !default;
-$toolbar-md-active-color:                 map-get($colors, danger) !default;
+$toolbar-md-active-color:                   map-get($colors, danger) !default;
 //$toolbar-md-inactive-color:               map-get($colors, primary) !default;
-
+$button-fab-size:                           50px !default;
 //$checkbox-md-icon-checkmark-color:        #fff !default;
 //$segment-button-md-text-color-activated:  #fff !default;
 
+$item-md-font-size:                         2.0rem !default;
 
 // Ionic Material Design Sass
 // --------------------------------------------------
