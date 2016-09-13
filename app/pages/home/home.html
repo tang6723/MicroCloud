@@ -6,27 +6,95 @@
 
 <ion-content class="home">
 
-  <ion-slides pager>
-    <ion-slide *ngFor="let slide of slides">
-      <ion-toolbar>
-        <ion-buttons end>
-          <button>Skip</button>
-        </ion-buttons>
-      </ion-toolbar>
-      <img [src]="slide.image" class="slide-image"/>
-      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-      <p [innerHTML]="slide.description"></p>
+  <ion-slides #myClider>
+    <ion-slide>
+      <ion-row wrap>
+        <ion-col>
+          <div>
+            <button fab style="position:relative" (click)="showCustomerRadio()">
+              <ion-icon name="ios-contacts"></ion-icon>
+            </button>
+            <h5>客户</h5>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <button fab style="position:relative" (click)="pushGoodsItem()">
+              <ion-icon name="ios-cart"></ion-icon>
+            </button>
+            <h5>商品</h5>
+          </div>
+        </ion-col>
+        <ion-col  >
+          <div>
+            <button fab style="position:relative" (click)="pushItem(1)">
+              <ion-icon name="md-checkmark"></ion-icon>
+            </button>
+            <h5>审批</h5>
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div>
+            <button fab style="position:relative" (click)="pushItem(2)">
+              <ion-icon name="logo-yen"></ion-icon>
+            </button>
+            <h5>付款</h5>
+          </div>
+        </ion-col>
+        <ion-col center width-10>
+          <button style="position:relative" clear (click)="gotoSlider(2)">
+            <ion-icon name="ios-arrow-forward"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
     </ion-slide>
     <ion-slide>
-      <ion-toolbar>
-      </ion-toolbar>
-      <img src="img/ica-slidebox-img-4.png" class="slide-image"/>
-      <h2 class="slide-title">Ready to Play?</h2>
-      <button large clear>
-        Continue
-        <ion-icon name="arrow-forward"></ion-icon>
-      </button>
+      <ion-row wrap>
+        <ion-col center width-10>
+          <button style="position:relative" clear (click)="gotoSlider(0)">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <div>
+            <button fab style="position:relative" (click)="pushItem(3)">
+              <ion-icon name="ios-card"></ion-icon>
+            </button>
+            <h5>发票</h5>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <button fab style="position:relative" (click)="pushItem(4)">
+              <ion-icon name="ios-clipboard-outline"></ion-icon>
+            </button>
+            <h5>验收</h5>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <button fab style="position:relative" (click)="pushItem(5)">
+              <ion-icon name="ios-car"></ion-icon>
+            </button>
+            <h5>入库</h5>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <!--<button fab style="position:relative" (click)="pushItem(6)">
+              <ion-icon name="ios-build-outline"></ion-icon>
+            </button>
+            <h5>...</h5>-->
+          </div>
+        </ion-col>
+      </ion-row>
     </ion-slide>
   </ion-slides>
+
+  <div style="height: 4px;width: auto;background-color: rgba(214, 214, 214, 0.15)"></div>
+  <ion-list>
+    <ion-item-divider>333</ion-item-divider>
+  </ion-list>
 
 </ion-content>
