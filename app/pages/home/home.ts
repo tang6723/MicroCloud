@@ -1,6 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import {NavController, Slides, NavParams} from 'ionic-angular';
 
+import {AboutPage} from '../about/about';
+
 
 
 @Component({
@@ -12,8 +14,11 @@ export class HomePage {
 
   mySlideOptions = {
     initialSlide: 1,
+    pager: true,
     loop: true
   };
+
+  typeTmp: string;
 
 
   constructor(private navCtrl: NavController , private  navParams: NavParams) {
@@ -23,15 +28,30 @@ export class HomePage {
     this.slider.slideTo(i, 300);
   }
 
-  onSlideChanged() {
-    let currentIndex = this.slider.getActiveIndex();
-    //this.mySlideOptions.loop=true;
-    //console.log("Current index is", currentIndex);
-  }
+  pushItem(index: number){
+    switch (index) {
+      case 1:
+        this.typeTmp = '审批';
+        break;
+      case 2:
+        this.typeTmp = '付款';
+        break;
+      case 3:
+        this.typeTmp = '发票';
+        break;
+      case 4:
+        this.typeTmp = '验收';
+        break;
+      case 5:
+        this.typeTmp = '入库';
+        break;
+    }
 
-  ionViewDidEnter(){
-    let currentIndex = this.slider.getActiveIndex();
-    console.log("Current index is", currentIndex);
+    this.navCtrl.push(AboutPage,{
+      id:"123",
+      type:this.typeTmp
+
+    });
   }
 
 }
