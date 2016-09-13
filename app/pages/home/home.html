@@ -6,13 +6,27 @@
 
 <ion-content class="home">
 
-  <ion-chip primary>
-    <ion-icon name="heart" color="dark"></ion-icon>
-    <ion-label>Primary</ion-label>
-  </ion-chip>
-
-  <ion-chip secondary>
-    <ion-label primary>Secondary w/ Dark label</ion-label>
-  </ion-chip>
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button>Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="img/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button large clear>
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
 
 </ion-content>
