@@ -10,6 +10,11 @@ export class HomePage {
 
   @ViewChild("myClider") slider: Slides;
 
+  mySlideOptions = {
+    initialSlide: 1,
+    loop: true
+  };
+
 
   constructor(private navCtrl: NavController , private  navParams: NavParams) {
   }
