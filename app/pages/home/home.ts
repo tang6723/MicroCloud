@@ -8,7 +8,7 @@ import {NavController, Slides, NavParams} from 'ionic-angular';
 })
 export class HomePage {
 
-  @ViewChild("myClider") slider: Slides;
+  @ViewChild("mySlider") slider: Slides;
 
   mySlideOptions = {
     initialSlide: 1,
@@ -21,6 +21,17 @@ export class HomePage {
 
   gotoSlider(i: number){
     this.slider.slideTo(i, 300);
+  }
+
+  onSlideChanged() {
+    let currentIndex = this.slider.getActiveIndex();
+    //this.mySlideOptions.loop=true;
+    //console.log("Current index is", currentIndex);
+  }
+
+  ionViewDidEnter(){
+    let currentIndex = this.slider.getActiveIndex();
+    console.log("Current index is", currentIndex);
   }
 
 }
