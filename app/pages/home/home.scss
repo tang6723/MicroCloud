@@ -11,7 +11,7 @@
     padding: 3px;
     border-radius: 2px;
     text-align: center;
-    height:120px;
+    height:90px;
   }
 
   slide-zoom {
@@ -19,6 +19,13 @@
   }
 */
 
+}
+
+.text-on-bottom   .button-inner {
+  flex-direction: column;
+}
+.text-on-bottom  {
+  margin-top: 8px;
 }
 
 

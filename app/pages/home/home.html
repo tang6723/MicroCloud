@@ -4,109 +4,159 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content >
-  <div style="height: 240px ">
-  <ion-slides #mySlider   [options]="mySlideOptions">
-    <ion-slide>
-      <ion-row >
-        <ion-col>
-          <div>
-            <button fab style="position:relative" (click)="pushItem(1)">
-              <ion-icon name="ios-contacts"></ion-icon>
+<ion-content>
+  <div style="height: 280px;padding: 0px; ">
+    <ion-slides #mySlider [options]="mySlideOptions">
+      <ion-slide>
+        <ion-row>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-cafe"></ion-icon>
             </button>
-            <h5>美食</h5>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>
-            <button fab style="position:relative" (click)="pushItem(1)">
-              <ion-icon name="ios-cart"></ion-icon>
+            <P>美食</P>
+          </ion-col>
+          <ion-col>
+            <button primary outline  >
+              <ion-icon name="ios-film-outline"></ion-icon>
             </button>
-            <h5>电影</h5>
-          </div>
-        </ion-col>
-        <ion-col  >
-          <div>
-            <button fab style="position:relative" (click)="pushItem(1)">
-              <ion-icon name="md-checkmark"></ion-icon>
-            </button>
-            <h5>酒店</h5>
-          </div>
-        </ion-col>
+            <P>电影</P>
 
-        <ion-col>
-          <div>
-            <button fab style="position:relative" (click)="pushItem(2)">
-              <ion-icon name="logo-yen"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <button secondary outline  >
+              <ion-icon name="ios-school"></ion-icon>
             </button>
-            <h5>外卖</h5>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>
-            <button fab style="position:relative" (click)="pushItem(2)">
-              <ion-icon name="logo-yen"></ion-icon>
+            <P>酒店</P>
+          </ion-col>
+
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-pizza-outline"></ion-icon>
             </button>
-            <h5>自助</h5>
-          </div>
-        </ion-col>
-        <!--<ion-col center width-10>
-          <button style="position:relative" clear (click)="gotoSlider(2)">
-            <ion-icon name="ios-arrow-forward"></ion-icon>
-          </button>
-        </ion-col>-->
-      </ion-row>
-    </ion-slide>
-    <ion-slide>
-      <ion-row wrap>
-        <!-- <ion-col center width-10>
-           <button style="position:relative" clear (click)="gotoSlider(0)">
-             <ion-icon name="ios-arrow-back"></ion-icon>
-           </button>
-         </ion-col>-->
-        <ion-col>
-          <div>
-            <button fab style="position:relative" (click)="pushItem(3)">
-              <ion-icon name="ios-card"></ion-icon>
+            <P>外卖</P>
+          </ion-col>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="md-restaurant"></ion-icon>
             </button>
-            <h5>发票</h5>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>
-            <button fab style="position:relative" (click)="pushItem(4)">
-              <ion-icon name="ios-clipboard-outline"></ion-icon>
+            <P>自助</P>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="logo-playstation"></ion-icon>
             </button>
-            <h5>验收</h5>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>
-            <button fab style="position:relative" (click)="pushItem(5)">
-              <ion-icon name="ios-car"></ion-icon>
+            <P>休闲</P>
+          </ion-col>
+          <ion-col>
+            <button secondary outline  >
+              <ion-icon name="ios-mic-outline"></ion-icon>
             </button>
-            <h5>入库</h5>
-          </div>
-        </ion-col>
-        <ion-col>
-          <div>
-            <!--<button fab style="position:relative" (click)="pushItem(6)">
-              <ion-icon name="ios-build-outline"></ion-icon>
+            <P>KTV</P>
+
+          </ion-col>
+          <ion-col>
+            <button primary outline  >
+              <ion-icon name="md-walk"></ion-icon>
             </button>
-            <h5>...</h5>-->
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-slide>
-  </ion-slides>
+            <P>出行</P>
+          </ion-col>
+
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="md-keypad"></ion-icon>
+            </button>
+            <P>洗浴</P>
+          </ion-col>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-hand"></ion-icon>
+            </button>
+            <P>美甲</P>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-row>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-ribbon"></ion-icon>
+            </button>
+            <P>丽人</P>
+          </ion-col>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-cut-outline"></ion-icon>
+            </button>
+            <P>美发</P>
+
+          </ion-col>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="md-paw"></ion-icon>
+            </button>
+            <P>足疗</P>
+          </ion-col>
+
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-water-outline"></ion-icon>
+            </button>
+            <P>温泉</P>
+          </ion-col>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="md-images"></ion-icon>
+            </button>
+            <P>周边</P>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="md-beer"></ion-icon>
+            </button>
+            <P>甜点</P>
+          </ion-col>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-ice-cream-outline"></ion-icon>
+            </button>
+            <P>蛋糕</P>
+
+          </ion-col>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-restaurant"></ion-icon>
+            </button>
+            <P>火锅</P>
+          </ion-col>
+
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-bonfire-outline"></ion-icon>
+            </button>
+            <P>烧烤</P>
+          </ion-col>
+          <ion-col>
+            <button danger outline  >
+              <ion-icon name="ios-clipboard"></ion-icon>
+            </button>
+            <P>新单</P>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+    </ion-slides>
   </div>
 
-  <div style="height: 4px;width: auto;background-color: rgba(214, 214, 214, 0.15)"></div>
+  <div style="height:5px;width:100%;background-color: #8f8f8f"></div>
   <ion-list>
     <ion-item-divider>
       尊卡通
       <button item-right danger>
-        <ion-icon name="ios-card" ></ion-icon>
+        <ion-icon name="ios-card"></ion-icon>
       </button>
     </ion-item-divider>
     <ion-item></ion-item>
