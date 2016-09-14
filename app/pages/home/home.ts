@@ -2,6 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {NavController, Slides, NavParams} from 'ionic-angular';
 
 import {AboutPage} from '../about/about';
+import {GoodsListPage} from '../commodity/goods-list/goods-list';
 
 
 
@@ -28,8 +29,8 @@ export class HomePage {
     this.slider.slideTo(i, 300);
   }
 
-  pushItem(index: number){
-    switch (index) {
+  pushItem(index: string){
+    /*switch (index) {
       case 1:
         this.typeTmp = '审批';
         break;
@@ -45,12 +46,10 @@ export class HomePage {
       case 5:
         this.typeTmp = '入库';
         break;
-    }
+    }*/
 
-    this.navCtrl.push(AboutPage,{
-      id:"123",
-      type:this.typeTmp
-
+    this.navCtrl.push(GoodsListPage,{
+      type:index
     });
   }
 
