@@ -30,7 +30,7 @@ export class AppGlobal {
     AppGlobal.instance = this;
   }
 
-  constructor(private http: Http) {}
+  // constructor(private http: Http) {}
 
   /**
    * 获取当前实例

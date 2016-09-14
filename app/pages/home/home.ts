@@ -3,6 +3,7 @@ import {NavController, Slides, NavParams} from 'ionic-angular';
 
 import {AboutPage} from '../about/about';
 import {GoodsListPage} from '../commodity/goods-list/goods-list';
+import {AppGlobal} from '../../providers/app-global/app-global'
 
 
 
@@ -20,9 +21,13 @@ export class HomePage {
   };
 
   typeTmp: string;
+  appInstance:AppGlobal;
+  userInf:string;
 
 
   constructor(private navCtrl: NavController , private  navParams: NavParams) {
+    this.appInstance=AppGlobal.getInstance();
+    this.userInf=this.appInstance.currentUserInfo;
   }
 
   gotoSlider(i: number){
