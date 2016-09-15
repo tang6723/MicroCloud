@@ -161,40 +161,6 @@
     </button>
   </ion-item-divider>
 
-
-  <!--<d1 class="list" id="daogou">
-    <dd class="dd-padding">
-      <div class="left">
-
-
-      </div>
-      <div class="right">
-        <div class="top">
-
-        </div>
-        <div class="bottom">
-          &lt;!&ndash;<a class="react scense" href="http://i.meituan.com/topic/scene/1" gaevent="imt/homepage/homeguide4" rel="nofollow">
-                <span class="info">
-                    <strong>工作简餐</strong>
-                    <small>实惠方便选择多</small>
-                </span>
-            <span class="imgbox" data-com="unveil" data-src="http://p1.meituan.net/mmc/726b30f162d1ea39a5077af83cec620811475.png" style="background: none;"><img src="http://p1.meituan.net/mmc/726b30f162d1ea39a5077af83cec620811475.png" style="height: 100%;"></span>
-          </a>&ndash;&gt;
-
-          <a class="react mingdian" href="http://i.meituan.com/topic/mingdian" gaevent="imt/homepage/homeguide2"
-             data-com="countdown" data-begin="1473868800" data-end="1473955200" data-now="1473900202.34"
-             countdown-status="running" rel="nofollow">
-                    <span class="info">
-                        <strong>名店抢购</strong>
-                        <small class="time-desc">距离结束</small>
-                        <span class="time-panel"><span class="span-time time-hour">14</span>:<span
-                          class="span-time time-min">50</span>:<span class="span-time time-sec">18</span></span>
-                    </span>
-          </a>
-        </div>
-      </div>
-    </dd>
-  </d1>-->
   <ion-item no-lines>
     <div class="parent">
       <div class="child aside-left">
@@ -204,7 +170,7 @@
             <small>恋人家人好朋友</small>
           </span>
           <span class="imgbox">
-            <img src="http://p0.meituan.net/mmc/fe4d2e89827aa829e12e2557ded363a112289.png" style="height: 88px;">
+            <img src="..\img\mt03.png" style="height: 88px;">
           </span>
         </div>
       </div>
@@ -216,33 +182,31 @@
             <small>十元惠生活</small>
           </span>
           <span class="img-box">
-            <img src="http://p0.meituan.net/mmc/a06d0c5c0a972e784345b2d648b034ec9710.jpg" style="height: 65px;">
+            <img src="..\img\mt02.jpg" style="height: 65px;">
           </span>
         </div>
+
         <!--<div style="clear: both;"></div>-->
 
         <div class="aside-right-bottom">
           <div class="bottom-left">
-            ggggg
-
-            <!--<span class="info-bottom-left">
+           <span class="info-bottom-left">
               <strong>工作简餐</strong>
               <small>实惠方便多</small>
             </span>
             <span class="img-bottom-left">
               <ion-icon name="ios-ice-cream" danger  ></ion-icon>
-            </span>-->
+            </span>
           </div>
 
           <div class="bottom-right">
-            kkkkk
-
-
-            <!--<span class="info-bottom-right">
+           <span class="info-bottom-right">
               <strong>名店抢购</strong>
-              <small >距离结束</small>
-            </span>-->
+              <small >距离结束 </small>
+              <ion-badge item-right danger style="margin-left: 0.6rem;margin-right: 0.6rem">07H 5:44</ion-badge>
+            </span>
           </div>
+
         </div>
       </div>
     </div>
@@ -257,7 +221,16 @@
       <ion-icon danger name="ios-heart"></ion-icon>
       <span danger style="font-weight: 900">你的收藏</span>
     </ion-item-divider>
-    <ion-item>{{userInf}}</ion-item>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <span class="dealcard-nobooking"></span>
+        <img src="img\mt04.jpg">
+      </ion-thumbnail>
+      <h2>{{userInf}}</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button clear item-right>View</button>
+
+    </ion-item>
   </ion-list>
 
 </ion-content>
