@@ -253,15 +253,22 @@ div {
   //background: tomato;
   order: 1;
 }
+.info {
+  vertical-align: top;
+  width: 1.7rem;
+  text-align: left;
+  display: inline-block;
+}
 .info strong {
   display: block;
   color: #55a40f;
   font-size: .3rem;
 
-  margin-top: .6rem;
-  margin-bottom: .25rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
 }
-small {
+.info small {
+  margin-top: 1.8rem;
   color: #666;
 }
 .imgbox img {
@@ -289,9 +296,47 @@ small {
   height: 74px;
   //height: 1.46rem;
 }
+.info-right strong{
+   display: block;
+   color: #ff3f0d;
+   font-size: .3rem;
+
+   margin-top: 0.8rem;
+   margin-bottom: 0.6rem;
+   margin-left: 0.8rem;
+ }
+.info-right small{
+  color: #666;
+
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  margin-left: 0.8rem;
+}
+.img-box img {
+  position: absolute;
+  right: 0%;
+  //top: 70%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  height: 1.26rem;
+  vertical-align: middle;
+  border: 0px;
+}
 .aside-right-bottom{
   //border-bottom: 1px solid #ddd8ce;
+  width:100%;
   height: 74px;
   //height: 1.46rem;
+}
+.bottom-left{
+  width:50%;
+  height: 100%;
+}
+.bottom-right{
+  border-left: 1px solid #ddd8ce;
+  width:50%;
+  height: 100%;
+  background: hotpink;
 }
 //*****  Start  ******
