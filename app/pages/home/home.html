@@ -221,16 +221,16 @@
       <ion-icon danger name="ios-heart"></ion-icon>
       <span danger style="font-weight: 900">你的收藏</span>
     </ion-item-divider>
-    <ion-item>
+    <button  ion-item *ngFor="let dataitem of dataList" (click)="buttonClick(dataitem)">
       <ion-thumbnail item-left>
         <span class="dealcard-nobooking"></span>
-        <img src="img\mt04.jpg">
+        <img src="{{dataitem.imgurl}}">
       </ion-thumbnail>
-      <h2>{{userInf}}</h2>
-      <p>Hayao Miyazaki • 1988</p>
-      <button clear item-right>View</button>
+      <h2>{{dataitem.brand}}</h2>
+      <p>{{dataitem.title}}</p>
 
-    </ion-item>
+
+    </button>
   </ion-list>
 
 </ion-content>
