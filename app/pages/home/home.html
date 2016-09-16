@@ -211,16 +211,15 @@
       </div>
     </div>
   </ion-item>
+
   <div style="height:5px;width:100%;background-color: #DDD8CE"></div>
 
-
   <ion-list>
-
-
     <ion-item-divider>
       <ion-icon danger name="ios-heart"></ion-icon>
       <span danger style="font-weight: 900">你的收藏</span>
     </ion-item-divider>
+
     <button  ion-item *ngFor="let dataitem of dataList" (click)="buttonClick(dataitem)">
       <ion-thumbnail item-left>
         <span class="dealcard-nobooking"></span>
