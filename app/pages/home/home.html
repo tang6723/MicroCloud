@@ -227,7 +227,13 @@
         <img src="{{dataitem.imgurl}}">
       </ion-thumbnail>
       <h2>{{dataitem.brand}}</h2>
-      <p>{{dataitem.title}}</p>
+      <p>{{dataitem.title}} </p>
+
+      <p><span class="price-strong">￥：{{dataitem.price}}</span> <span>元</span>
+        <span *ngIf="dataitem.state =='1'" class="tag">{{dataitem.tag}}</span>
+        <span *ngIf="dataitem.state =='0'">{{dataitem.tag}}</span>
+        <span *ngIf="dataitem.state =='2'" class="tag">{{dataitem.tag}}</span>
+      </p>
 
 
     </button>
