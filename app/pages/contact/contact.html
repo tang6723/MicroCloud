@@ -8,10 +8,96 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
     </ion-item>
+
+    <button ion-item [navPush]="goodsPage">
+      <ion-icon name="ios-archive" item-left></ion-icon>
+      我的定单
+      <ion-note item-right>全部定单</ion-note>
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+
+    <ion-item  no-lines>
+      <ion-row>
+        <ion-col>
+          <button danger clear small>
+            <ion-icon name='thumbs-up'></ion-icon>
+            <div>待付款</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button danger clear small>
+            <ion-icon name='text'></ion-icon>
+            <div>待使用</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button danger clear small>
+            <ion-icon name='text'></ion-icon>
+            <div>待评价</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button danger clear small>
+            <ion-icon name='text'></ion-icon>
+            <div>退款售后</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <div style="height:5px;width:100%;background-color: #DDD8CE;top:-3px;"></div>
+
+    <button ion-item  [navPush]="goodsPage">
+      <ion-icon name="ios-archive" item-left></ion-icon>
+      我的钱包
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+
+    <button ion-item [navPush]="eventsPage">
+      <ion-icon name="ios-flash-outline" item-left></ion-icon>
+      余额
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+    <button ion-item no-lines [navPush]="eventsPage">
+      <ion-icon name="ios-flash-outline" item-left></ion-icon>
+      抵用卷
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+    <div style="height:5px;width:100%;background-color: #DDD8CE;top:-3px;"></div>
+    <button ion-item [navPush]="eventsPage">
+      <ion-icon name="ios-flash-outline" item-left></ion-icon>
+      好友去那
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+    <button ion-item [navPush]="eventsPage">
+      <ion-icon name="ios-flash-outline" item-left></ion-icon>
+      我的评价
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+    <button ion-item [navPush]="eventsPage">
+      <ion-icon name="ios-flash-outline" item-left></ion-icon>
+      会员中心
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+    <button ion-item no-lines [navPush]="eventsPage">
+      <ion-icon name="ios-flash-outline" item-left></ion-icon>
+      积分商城
+      <ion-note item-right>好礼上线</ion-note>
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+    <div style="height:5px;width:100%;background-color: #DDD8CE;top:-3px;"></div>
+    <button ion-item [navPush]="eventsPage">
+      <ion-icon name="ios-flash-outline" item-left></ion-icon>
+      客服中心
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+    <button ion-item [navPush]="eventsPage">
+      <ion-icon name="ios-flash-outline" item-left></ion-icon>
+      关于我们
+      <ion-note item-right>我要合作</ion-note>
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </button>
+
   </ion-list>
 </ion-content>
