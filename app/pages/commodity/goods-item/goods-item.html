@@ -6,13 +6,103 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>goods-item</ion-title>
+  <ion-navbar text-center>
+    <ion-title>商品详情</ion-title>
+    <ion-buttons end>
+      <button secondary>
+        <ion-icon name="ios-cart"></ion-icon>
+      </button>
+      <button danger>
+        <ion-icon name="ios-add-circle-outline"></ion-icon>
+      </button>
+      <!--<button royal showWhen="ios,windows"><ion-icon name="person-add"></ion-icon></button>-->
+      <!--<button light hideWhen="ios,windows"><ion-icon name="person-add"></ion-icon></button>-->
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <ion-list inset>
+    <ion-item>
+      <img [src]="imgurl">
+    </ion-item>
+    <ion-item>
+      <p><span class="price-strong">￥：{{price}}</span> <span>元</span>
+        <span *ngIf="state =='1'" class="tag">{{tag}}</span>
+        <span *ngIf="state =='0'">{{tag}}</span>
+        <span *ngIf="state =='2'" class="tag">{{tag}}</span>
+      </p>
+      <button danger item-right>
+        <ion-icon name="ios-add-circle-outline"></ion-icon>
+        定购
+      </button>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <button primary clear small>
+            <ion-icon name='thumbs-up'></ion-icon>
+            <div>46 定购</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button primary clear small>
+            <ion-icon name='text'></ion-icon>
+            <div>66 评价</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-note>
+            2天 前
+          </ion-note>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item no-lines>
+      <ion-row>
+        <ion-col>
+          <button favorite clear small>
+            <ion-icon name='logo-euro'></ion-icon>
+            <div>支持随时退款</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button favorite clear small>
+            <ion-icon name='logo-euro'></ion-icon>
+            <div>支持过期自动退</div>
+          </button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button  clear small>
+            <ion-icon name='logo-euro'></ion-icon>
+            <div>已售811446</div>
+          </button>
+        </ion-col>
+        <!--<ion-col>
+          <button favorite clear small>
+            <ion-icon name='logo-euro'></ion-icon>
+            <div>支持过期自动退</div>
+          </button>
+        </ion-col>-->
+      </ion-row>
+    </ion-item>
+
+
+    <div style="height:5px;width:100%;background-color: #DDD8CE;top:-3px;"></div>
+    <ion-item-divider>商家信息</ion-item-divider>
+    <ion-item></ion-item>
+    <ion-item></ion-item>
+    <ion-item no-lines></ion-item>
+    <div style="height:5px;width:100%;background-color: #DDD8CE;top:-3px;"></div>
+    <ion-item-divider>评介</ion-item-divider>
+    <ion-item></ion-item>
+    <ion-item></ion-item>
+    <ion-item></ion-item>
+  </ion-list>
+
 
 </ion-content>

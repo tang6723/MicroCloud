@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController ,NavParams} from 'ionic-angular';
 
 /*
   Generated class for the GoodsItemPage page.
@@ -18,6 +18,7 @@ export class GoodsItemPage {
   title:string="八种口味，建议1-2人食用";
   price:string="8.5";
   total:string="11.2";
+  dataItem:any;
 
   private dataList: any = [
     {imgurl: 'img\\mt04.jpg', id: '123456', brand: '新政鸡排',    title: '[全国][官方]新政鸡排',    price: '8.9', total: 10 , tag: '多优惠+' , state: '1' },
@@ -27,7 +28,26 @@ export class GoodsItemPage {
     {imgurl: 'img\\mt04.jpg',id: '123460', brand: '老城一锅',    title: '人民公园，建议2-4人食用', price: '79',  total: 90 , tag: '新用户立减5元' , state: '2'}
   ];
 
-  constructor(private navCtrl: NavController) {
+  constructor(private navCtrl: NavController , private  navParams: NavParams) {
+    this.dataItem=navParams.get("dataitem");
+    this.id=this.dataItem.id;
+    if(this.id=="123456"){
+      this.imgurl="img\\mt08.jpg";
+    }
+    if(this.id=="123457"){
+      this.imgurl="img\\mt09.jpg";
+    }
+    if(this.id=="123458"){
+      this.imgurl="img\\mt10.jpg";
+    }
+    if(this.id=="123459"){
+      this.imgurl="img\\mt09.jpg";
+    }
+    if(this.id=="123460"){
+      this.imgurl="img\\mt10.jpg";
+    }
+
+
 
   }
 
