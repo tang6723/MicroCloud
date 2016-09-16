@@ -3,9 +3,9 @@ import {NavController, Slides, NavParams} from 'ionic-angular';
 
 import {AboutPage} from '../about/about';
 import {GoodsListPage} from '../commodity/goods-list/goods-list';
-import {GoodsItemPage} from '../commodity/goods-item/goods-item'
+import {GoodsItemPage} from '../commodity/goods-item/goods-item';
 
-import {AppGlobal} from '../../providers/app-global/app-global'
+import {AppGlobal} from '../../providers/app-global/app-global';
 
 
 
