@@ -24,10 +24,9 @@
 <ion-content >
 
   <ion-list>
-    <ion-item-divider>
-      <ion-icon danger name="ios-heart"></ion-icon>
-      <span danger style="font-weight: 900">{{typeParam}}</span>
-    </ion-item-divider>
+    <ion-item>
+      <img [src]="imgurl">
+    </ion-item>
 
     <button  ion-item *ngFor="let dataitem of dataList" (click)="buttonClick(dataitem)">
       <ion-thumbnail item-left>

@@ -14,6 +14,8 @@ import {GoodsItemPage} from '../commodity/goods-item/goods-item';
 })
 export class ShopePage {
 
+  imgurl:string="img\\mt08.jpg";
+
   private dataList: any = [
     {imgurl: 'img\\mt04.jpg', id: '123456', brand: '新政鸡排',    title: '[全国][官方]新政鸡排',    price: '8.9', total: 10 , tag: '多优惠+' , state: '1' },
     {imgurl: 'img\\mt05.jpg',id: '123457', brand: '矮子薯饼',    title: '八种口味，建议1-2人食用', price: '8.5', total: 11.2  , tag: '中秋优惠+' , state: '1'},
