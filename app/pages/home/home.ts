@@ -8,6 +8,7 @@ import {GoodsItemPage} from '../commodity/goods-item/goods-item';
 import {AppGlobal} from '../../providers/app-global/app-global';
 
 
+declare var hprose;
 
 @Component({
   templateUrl: 'build/pages/home/home.html'
@@ -54,6 +55,16 @@ export class HomePage {
     this.navCtrl.push(GoodsItemPage,{
       dataitem:dataItem
     });
+  }
+
+  ngAfterViewInit(){
+    var client = hprose.Client.create("http://www.hprose.com/example/", ["hello"]);
+    client.hello("World!").then(function (result) {
+      alert(result);
+
+    }, function (err) {
+      alert(err);
+    })
   }
 
 }
