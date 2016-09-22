@@ -60,10 +60,12 @@ export class HomePage {
   ngAfterViewInit(){
     var client = hprose.Client.create("http://www.hprose.com/example/", ["hello"]);
     client.hello("World!").then(function (result) {
-      alert(result);
+      //alert(result);
+      console.warn("result");
 
     }, function (err) {
-      alert(err);
+      //alert(err);
+      console.error(err);
     })
   }
 
